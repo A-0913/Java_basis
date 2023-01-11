@@ -1,11 +1,11 @@
 public class Main {
   public static void main(String[] args) {
-    int i = 1;
-    while(i < 5){
-      int number = 0;
-      number = i*i;
-      System.out.println("number = " + number);
-      i++;
+    int[] array = { 10, 25, 40, 59 };
+    for(int number : array){
+      if(number % 2 == 0){
+        continue;
+      }
+      System.out.println(number);
     }
   }
 }
