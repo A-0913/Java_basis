@@ -1,13 +1,14 @@
-public class Chapter07 {
+public class Main {
 	public static void main(String[] args) {
-		int km = 5;
-		if (km <= 5) {
+		int i = 10;
+
+		if(i <= 5){
 			System.out.println("とても近いです");
-		} else if (km <= 10) {
+		}else if(i <= 10){
 			System.out.println("近いです");
-		} else if (km <= 15) {
+		}else if(i <= 15){
 			System.out.println("遠いです");
-		} else {
+		}else{
 			System.out.println("とても遠いです");
 		}
 	}
