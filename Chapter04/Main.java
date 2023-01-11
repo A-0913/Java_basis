@@ -1,12 +1,12 @@
-public class Chapter04 {
+public class Main {
 	 public static void main(String[] args) {
 		String myname = "myname";
 		System.out.println(myname);
 
-		myname = "ポジティブ";
+		myname = "DMM WEBCAMP";
 		System.out.println(myname);
 
-    final int LACKY_NUMBER = 3;
-    System.out.println(LACKY_NUMBER);
+    final int LuckyNumber = 3;
+    System.out.println(LuckyNumber);
 	 }
 }
