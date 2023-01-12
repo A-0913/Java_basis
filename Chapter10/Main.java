@@ -21,8 +21,9 @@ public class Main {
             // ・throwSQLExceptionメソッドを呼び出し
             Main.throwSQLException();
           } catch (SQLException s){
-            // ・SQLExceptionをキャッチして、メッセージとスタックトレースを出力
+            // ・SQLExceptionをキャッチして、
             System.out.println("SQLExceptionが発生しました");
+            // ・メッセージとスタックトレースを出力
             s.printStackTrace();
           } finally {
             // ・"throwSQLExceptionの呼び出し終了"のメッセージを出力
@@ -33,9 +34,9 @@ public class Main {
         System.out.println("mainメソッド終了");
     }
 
-    // validIndexメソッドを作成
-    // ・indexがarrayのサイズの範囲内なら、インデックスの要素を出力
+    // ・validIndexメソッドを作成
     public static void validIndex(int[] array, int index) {
+    // ・indexがarrayのサイズの範囲内なら、インデックスの要素を出力
       if (array.length <= index) {
           // ・サイズの範囲外なら、IllegalArgumentExceptionをスロー
           throw new IllegalArgumentException(index + " はサイズの範囲外です");
