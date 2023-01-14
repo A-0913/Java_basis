@@ -23,7 +23,7 @@ public class Chapter13 {
     Chapter13.staticCall(flyingPhone, "000-1111-2222");
 
     //defaultメソッドがFlying および Phone （＝同じ階層どうし）から継承されているため、
-    //Flying.javaで明示的にどちらのdefaultメソッドを使用するかを記述する必要がある。
+    //FlyingPhone.javaで明示的にどちらのdefaultメソッドを使用するかを記述する必要がある。
     flyingPhone.powerOff();
   }
 

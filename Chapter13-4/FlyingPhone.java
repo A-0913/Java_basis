@@ -21,6 +21,7 @@ public class FlyingPhone implements Phone, Flying {
 		System.out.println( number + "に電話します。通話できるのは飛んでいる間だけです。");
 	}
 
+  // Flying.javaのdefaultメソッドを呼び出すため、明示的に記述する。
   // インターフェースを実装したクラスからdefaultメソッドを呼び出す基本構文
   // 《インターフェース.super.デフォルトメソッド名();》
   public void powerOff() {
