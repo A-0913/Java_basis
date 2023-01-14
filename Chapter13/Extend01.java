@@ -13,11 +13,11 @@ public class Extend01 {
     System.out.println("Humanクラスのメソッド：名前は、" + sato.getName());
     System.out.println("Studentクラスのメソッド：プロフィールを紹介します。" + sato.getStudentProfile());
 
-　　// Employeeクラスのインスタンスを生成して、アップキャストでHumanクラスの変数humanに代入
+　　// Employeeクラスのインスタンスを生成して、アップキャスト※でHumanクラスの変数humanに代入
     Human human = new Employee("田中", 28, "システム部");　//Employee(String name, int age, String department)
     System.out.println("Humanクラスのメソッド：名前は、" + human.getName());
 
-　　// Employeeクラスの変数にダウンキャストして Employee型の変数tanakaに代入
+　　// Employeeクラスの変数にダウンキャスト※して Employee型の変数tanakaに代入
     Employee tanaka = (Employee) human;　//明示的に変換先のデータ型を指定
     System.out.println("Employeeクラスのメソッド：プロフィールを紹介します。" + tanaka.getEmployeeProfile());
 
@@ -32,3 +32,8 @@ public class Extend01 {
     System.out.println("Humanクラスのメソッド：名前は、" + human.getName());
   }
 }
+
+//※
+//キャストとは…ある型から別の型に変換すること《例》(型)変数名
+//クラスのアップキャスト…スーパークラスのオブジェクトにサブクラスのインスタンスを格納すること
+//クラスのダウンキャスト…サブクラスのオブジェクトにスーパークラスのオブジェクトを格納すること
