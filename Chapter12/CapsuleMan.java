@@ -1,23 +1,29 @@
 package capsule.human;
 
 public class CapsuleMan {
+
+  // privateのアクセス修飾子を設定してカプセル化している
 	private String name;
 	private int age;
 
-    public CapsuleMan(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+  // コンストラクタを設定
+  public CapsuleMan(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  // nameのgetterメソッド:private になっているフィールド変数を取得するためのもの
+  public String getName() {
+    return this.name;
+  }
 
-    public int getAge() {
-        return this.age;
-    }
+  // nameのsetterメソッド:private になっているフィールド変数を変更するためのもの
+  public int getAge() {
+    return this.age;
+  }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+  // ageのgetterメソッド:private になっているフィールド変数を取得するためのもの
+  public void setAge(int age) {
+    this.age = age;
+  }
 }
