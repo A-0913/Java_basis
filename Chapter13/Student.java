@@ -5,7 +5,7 @@ public class Student extends Human {
     private int score;
 
     public Student(String name, int age, int score) {
-        //スーパークラスのコンストラクタに渡す
+        //スーパークラス(Human.java)のコンストラクタに渡す
         super(name, age);
         this.score = score;
     }
