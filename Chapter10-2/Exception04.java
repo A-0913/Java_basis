@@ -22,6 +22,7 @@ public class Exception04 {
   public static void readFile(String fileName) throws FileNotFoundException {
     System.out.println("ファイルの読み込み開始");
     // 2.ファイルが存在しないため例外が発生
+    // 呼び出し元のcatch節に処理が移る
     FileReader fr = new FileReader(fileName);
     System.out.println(fileName + "の読み込み完了");
   }

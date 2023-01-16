@@ -15,7 +15,7 @@ public class Exception03 {
       // 4.キャッチした例外インスタンスをスロー
       throw e;
     }
-    // ※finallyブロックでないので処理が実行されない
+    // ※finallyブロックでなく、catch文で例外処理されていないので処理が実行されない
     System.out.println("プログラム終了");
 	}
 
@@ -24,7 +24,8 @@ public class Exception03 {
     System.out.println(a + " ÷ " + b + " は？");
     // 変数bの値が0と等しい時に必ずエラーにしたい
     if (b == 0) {
-      // throwステートメント:「throw new 例外クラス」
+      // throw:任意のタイミングで例外を発生させて、例外処理を行うことができる
+      // 基本構文:throw new 例外クラス
       // 2.割り算で例外が発生するので、意図的にIllegalArgumentException例外をスロー
       throw new IllegalArgumentException("引数が不正です");
     }
