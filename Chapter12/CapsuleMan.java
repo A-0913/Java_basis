@@ -6,7 +6,7 @@ public class CapsuleMan {
 	private String name;
 	private int age;
 
-  // コンストラクタを設定
+  // CapsuleManインスタンスのコンストラクタを設定
   public CapsuleMan(String name, int age) {
     this.name = name;
     this.age = age;

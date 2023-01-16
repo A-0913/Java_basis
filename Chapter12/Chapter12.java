@@ -3,6 +3,7 @@ package capsule.human;
 public class Chapter12 {
   public static void main(String[] args) {
 
+  　//CapsuleManインスタンスを作成（→コンストラクタ実行）
     CapsuleMan man = new CapsuleMan("小林", 32);
 
     // getnameメソッドで変数nameを取得する
