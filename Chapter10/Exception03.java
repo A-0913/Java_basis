@@ -9,6 +9,7 @@ public class Exception03 {
     } catch (ArithmeticException e) {
       System.out.println("ArithmeticException例外が発生");
       // 3.IllegalArgumentExceptionクラスの例外処理が実行される
+      // 例外の発生後は、このthrowステートメントに対応するcatch節に処理が移る
     } catch (IllegalArgumentException e) {
       System.out.println("IllegalArgumentException例外が発生");
       // 4.キャッチした例外インスタンスをスロー
@@ -21,7 +22,9 @@ public class Exception03 {
   // divisionメソッド
 	public static void division(int a, int b) {
     System.out.println(a + " ÷ " + b + " は？");
+    // 変数bの値が0と等しい時に必ずエラーにしたい
     if (b == 0) {
+      // throwステートメント:「throw new 例外クラス」
       // 2.割り算で例外が発生するので、意図的にIllegalArgumentException例外をスロー
       throw new IllegalArgumentException("引数が不正です");
     }
