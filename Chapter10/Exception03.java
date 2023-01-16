@@ -15,7 +15,7 @@ public class Exception03 {
       // 4.キャッチした例外インスタンスをスロー
       throw e;
     }
-    // ※finallyブロックでなく、catch文で例外処理されていないので処理が実行されない
+    // ※finallyブロックでないので処理が実行されない
     System.out.println("プログラム終了");
 	}
 
