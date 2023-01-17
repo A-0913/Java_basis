@@ -12,14 +12,14 @@ public class Car {
      this.fuelAmount = fuelAmount;
   }
   // moveメソッド
-  // ・"xx km 走ります"を出力
   public void move(int distance){
+    // ・"xx km 走ります"を出力
     System.out.println( distance + "km 走ります");
     // ・残量を計算
     this.fuelAmount -= (distance / fuelCost);
   }
 
-  // fuelAmountを取得するメソッドを作成
+  // fuelAmountを取得するメソッド
   public double getFuelAmount(){
     return this.FuelAmount;
   }
