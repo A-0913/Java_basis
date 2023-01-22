@@ -35,7 +35,7 @@ public class Main {
         BufferedWriter writer = Files.newBufferedWriter(outputPath);) {
 
       String line = null;
-      // BufferedReader.readLineメソッドを使用して、1行づつ処理
+      // BufferedReader.readLineメソッドを使用して、1行ずつ処理
       // 読み込む行がなくなるまでループ
       while ((line = reader.readLine()) != null) {
           // 文字数が5以外の場合はスキップ
