@@ -1,10 +1,22 @@
 package practice;
 
+// ファイルに出力する基本的な方法
+// 書き込むファイルを指定する→ファイルに書き込む→ファイルを閉じる
+
+// java.ioパッケージ:システム入出力に使うクラス、インターフェース等が提供されているパッケージ
+
+// BufferedReader:文字、配列、行をバッファリングすることによって、文字型入力ストリームからテキストを効率良く読み込む
 import java.io.BufferedReader;
+// BufferedWriter:文字をバッファリングすることによって、文字、配列、または文字列を効率良く文字型出力ストリームに書き込む
 import java.io.BufferedWriter;
+// IOException:入出力処理中の例外を管理するクラス
 import java.io.IOException;
+
+// java.nioパッケージ:基本的な標準I/O処理を補完した形で、より高機能な処理を実現出来るよう改善されたパッケージ
+
+// FileSystem:ファイル・システムへのインタフェースを提供し、ファイル・システム内のファイルやその他のオブジェクトにアクセスするためのオブジェクトのファクトリ
 import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
+import java.nio.file.FileSystems
 import java.nio.file.Files;
 import java.nio.file.Path;
 
