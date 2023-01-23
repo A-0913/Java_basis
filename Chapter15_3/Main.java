@@ -2,12 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
         int i1 = 123;
-        // 暗黙的にキャストされる
+        // 暗黙的にキャストされる(自動的に型変換される)
+        // データサイズが小さい型から大きい型は暗黙的にキャストされるため、明示的にキャストする必要がない
         double d1 = i1;
         System.out.println(d1);
 
         double d2 = 12.345;
         // 明示的にキャストしないとコンパイルエラー
+        // データサイズが大きい型から小さい型への代入は明示的にキャストする必要がある
         int i2 = (int) d2;
         System.out.println(i2);
 
@@ -19,6 +21,7 @@ public class Main {
 
         int i5 = 128;
         // 明示的にキャストしないとコンパイルエラー
+        // データサイズが大きい型から小さい型への代入は明示的にキャストする必要がある
         byte b1 = (byte) i5;
         System.out.println(b1);
     }
