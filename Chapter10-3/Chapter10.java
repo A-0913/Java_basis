@@ -39,6 +39,7 @@ public class Chapter10 {
         // 　Javaのプログラム内で出力することができる。
         e.printStackTrace();
     } finally {
+      // finally文:例外発生の有無にかかわらず必ず実行する
       // 13."throwSQLExceptionの呼び出し終了"のメッセージを出力
     	System.out.println("throwSQLExceptionの呼び出し終了");
     }
@@ -49,12 +50,12 @@ public class Chapter10 {
 
 
   public static void validIndex(int[] array, int index) {
-    // ・indexがarrayのサイズの範囲内なら、
-  	if (index >= array.length) {
-  	  // 4.index(3)がarrayのサイズ(3)の範囲外のためIllegalArgumentExceptionをスロー
-  		throw new IllegalArgumentException(index + " はサイズの範囲外です");
+    // ・indexがarrayのサイズの範囲内なら、※要素番号は0から始まるため、要素数-1の数字以内でないとエラーとなる
+  	if ( index >= array.length) {
+  	  // 4.index(3)がarrayのサイズの範囲外のためIllegalArgumentExceptionをスロー
+  		throw new IllegalArgumentException( index + " はサイズの範囲外です");
   	}
-  	// 2.index(2)がarrayのサイズ(3)の範囲内のため要素を出力
+  	// 2.index(2)がarrayのサイズの範囲内のため要素を出力
   	System.out.println("インデックス " + index + " の要素は " + array[index] + " です");
   }
 
