@@ -6,7 +6,7 @@ public class Main {
         double fuelCost = 12.5;
         // 残量（L）
         double fuelAmount = 55.0;
-        // Carインスタンスを生成する(→コンストラクタ実行)
+        // Carインスタンスを生成する(→コンストラクタが実行される)
         Car car = new Car(fuelCost, fuelAmount);
 
         car.move(20);
