@@ -1,5 +1,3 @@
-package extend;
-
 import extend.human.Employee;
 import extend.human.Human;
 import extend.human.Student;
