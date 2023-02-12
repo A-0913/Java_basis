@@ -1,5 +1,3 @@
-package extend;
-
 import extend.MobilePhone;
 import extend.Phone;
 

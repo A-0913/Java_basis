@@ -1,5 +1,3 @@
-package extend;
-
 import extend.Phone;
 
 public class FlyingPhone implements Phone, Flying {

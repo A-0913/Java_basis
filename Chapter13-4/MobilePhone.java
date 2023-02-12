@@ -1,6 +1,3 @@
-package extend;
-
-
 // 抽象クラスと同じようにインターフェースもインスタンス生成することはできない
 
 // Phone, Cameraインターフェースを実装したMobilePhoneクラスの宣言

@@ -1,5 +1,3 @@
-package extend;
-
 public interface Flying {
   // メソッド（抽象メソッド）
   void fly();
